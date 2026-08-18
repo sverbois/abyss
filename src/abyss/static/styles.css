@@ -1,0 +1,75 @@
+/**********************************/
+:root {
+  /*** ABYSS VARIABLES ***/
+  /* === Bleus — couleur identitaire principale === */
+  --abyss-blue-100: #eaf5fb; /* Fond de sections, encadrés */
+  --abyss-blue-400: #1892d1; /* CTA, liens, accents, boutons */
+  --abyss-blue-400-rgb: 24, 146, 209; /* CTA, liens, accents, boutons */
+  --abyss-blue-600: #037dd2; /* Hover boutons, liens actifs */
+  --abyss-blue-600-rgb: 3, 125, 210; /* Hover boutons, liens actifs */
+  --abyss-blue-800: #0c71c3; /* Header/nav, titres forts */
+  --abyss-grey-100: #f5f5f5; /* Fond général, sections */
+
+  /* === Accents / alertes === */
+  --abyss-coral: #fb6f5f; /* Badges, tags, mise en avant */
+  --abyss-red: #e02b20; /* Alertes, promotions urgentes */
+  --abyss-amber: #fbb03b; /* Avertissements, étoiles, notes */
+
+  /* === Neutres / textes === */
+  --abyss-black: #000000; /* Titres */
+  --abyss-grey-900: #303030; /* Corps de texte principal */
+  --abyss-grey-800: #333333; /* Texte secondaire, navigation */
+  --abyss-grey-700: #4e4e4e; /* Sous-titres, descriptions */
+  --abyss-grey-300: #c1c1c1; /* Bordures, séparateurs */
+  --abyss-grey-100: #f5f5f5; /* Fond sections */
+  --abyss-white: #ffffff; /* Fond général */
+
+  /*** BS VARIABLES ***/
+  --bs-border-radius: 0 !important;
+  --bs-primary: var(--abyss-blue-600) !important;
+  --bs-primary-rgb: var(--abyss-blue-600-rgb) !important;
+  --bs-secondary: red !important;
+  --bs-link-color: var(--abyss-blue-400) !important;
+  --bs-link-color-rgb: var(--abyss-blue-400-rgb) !important;
+
+  /*** PLONE VARIABLES ***/
+  /* Voir https://github.com/plone/plonetheme.barceloneta/blob/v3.3.4/scss/_root_variables.scss */
+  /*--plone-state-private: green !important;*/
+}
+/**********************************/
+.navbar-barceloneta {
+  --bs-navbar-background: var(--abyss-blue-600) !important;
+}
+/**********************************/
+
+/**********************************/
+h1 {
+  color: var(--abyss-blue-600) !important;
+}
+h2 {
+  color: var(--abyss-red) !important;
+}
+#portal-globalnav {
+  text-transform: uppercase;
+}
+
+/*** Change la police de caractères pour tout le site qui fonctionne
+
+  @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap");
+
+  body,
+  p,
+  li,
+  td,
+  div {
+    font-family: "Dancing Script", cursive;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Dancing Script", cursive;
+    font-weight: 600;
+  }
+  ***/

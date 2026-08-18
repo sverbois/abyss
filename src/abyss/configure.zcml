@@ -1,0 +1,42 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
+    >
+
+  <genericsetup:registerProfile
+      name="default"
+      title="Abyss"
+      description="Installs the Abyss add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/default"
+      />
+
+  <genericsetup:registerProfile
+      name="uninstall"
+      title="Abyss (uninstall)"
+      description="Uninstalls the Abyss add-on."
+      provides="Products.GenericSetup.interfaces.EXTENSION"
+      directory="profiles/uninstall"
+      />
+
+  <browser:jbot
+      directory="jbot"
+      layer=".interfaces.IAbyssLayer"
+      />
+
+  <plone:static
+      directory="static"
+      name="abyss"
+      type="plone"
+      />
+
+  <!--
+  <include package=".contents"
+  <include package=".views" />
+  <include package=".forms" />
+  -->
+
+</configure>
